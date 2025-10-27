@@ -1,0 +1,94 @@
+/* Import Google Font 'Lato' */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Basic setup and browser-native font for headings */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif; /* Imported font */ [cite: 15]
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6em; /* Relative unit */ [cite: 20]
+}
+
+h1, h2 {
+  font-family: Georgia, serif; /* Browser-native font */ [cite: 15]
+  color: #005a9c;
+}
+
+/* --- Navigation --- */
+/* Style the <nav> element itself */
+nav {
+  background-color: #333;
+  width: 100%;
+}
+
+/* Style the navigation list */
+nav ul {
+  list-style-type: none; /* Single declaration to remove list style */ [cite: 12]
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centers the horizontal navigation */ [cite: 14]
+}
+
+/* Style the navigation links */
+nav li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1rem 1.5rem; /* Relative units */ [cite: 20]
+}
+
+nav li a:hover {
+  background-color: #555;
+}
+
+/* --- Layout Containers --- */
+
+/* Fluid layout for home and bowling pages */ 
+.container-fluid {
+  width: 90%; /* Relative unit */ [cite: 20]
+  max-width: 1200px; /* Max size in px is allowed */ [cite: 21]
+  margin: 2rem auto; /* Relative unit */ [cite: 20]
+  padding: 2rem; /* Relative unit */ [cite: 20]
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* Fixed-width layout for resume page */ 
+.container-fixed {
+  width: 960px; /* Fixed width */ [cite: 21]
+  margin: 2rem auto; /* Relative unit */ [cite: 20]
+  padding: 2rem; /* Relative unit */ [cite: 20]
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* --- Content Styling (applies to all pages) --- */ [cite: 13]
+
+/* Ensure media items are responsive */
+img, video, audio {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem; /* Relative unit */ [cite: 20]
+}
+
+/* Specific styles for resume skills list */
+#resume-skills li {
+  background-color: #eaf6ff;
+  margin-bottom: 0.5em; /* Relative unit */ [cite: 20]
+  padding: 0.5em; /* Relative unit */ [cite: 20]
+}
+
+/* Style headings */
+h1 {
+  border-bottom: 3px solid #005a9c;
+  padding-bottom: 0.5rem; /* Relative unit */ [cite: 20]
+}
+
+h2 {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0.25rem; /* Relative unit */ [cite: 20]
+}
